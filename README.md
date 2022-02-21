@@ -1,3 +1,22 @@
-![ci-badge](https://github.com/ics-software-engineering/meteor-application-template-react/workflows/ci-meteor-application-template-react/badge.svg)
+# ICS 427 - HANA MARKET
 
-For details, please see http://ics-software-engineering.github.io/meteor-application-template-react/
+## Overview
+
+
+## What is complete so far
+- Set up a repository for the team (GitHub)
+
+
+## What is pending
+
+
+## List of team members & Assignments
+
+#### Keith Okuna
+- Worked on in the project so far:
+- Next:
+
+#### Yeji Han
+
+- Worked on in the project so far:
+- Next:
