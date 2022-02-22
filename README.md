@@ -22,9 +22,11 @@
 
 ### Keith Okuna
 
-#### Worked on in the project so far: Finished the report
+#### Worked on in the project so far: 
 
-#### Next:
+Finished the report
+
+Photo Viewing 
 
 ### Yeji Han
 
