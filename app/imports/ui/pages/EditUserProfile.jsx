@@ -34,24 +34,24 @@ class EditUserProfile extends React.Component {
   }
 
   userUpdate({ id, data }) {
-    if (id === "new") {
+    if (id === 'new') {
       Users.collection.insert(
-          { ...data, owner: Meteor.user().username },
-          (error) => {
-            if (error) {
-              swal("Error", error.message, "error");
-            } else {
-              swal("Success", "User Profile Added Successfully", "success");
-              this.setState({ redirectToReferer: true });
-            }
+        { ...data, owner: Meteor.user().username },
+        (error) => {
+          if (error) {
+            swal('Error', error.message, 'error');
+          } else {
+            swal('Success', 'User Profile Added Successfully', 'success');
+            this.setState({ redirectToReferer: true });
           }
+        },
       );
     } else {
       Users.collection.update(id, { $set: data }, (error) => {
         if (error) {
-          swal("Error", error.message, "error");
+          swal('Error', error.message, 'error');
         } else {
-          swal("Success", "User Profile Updated", "success");
+          swal('Success', 'User Profile Updated', 'success');
           this.setState({ redirectToReferer: true });
         }
       });
@@ -90,7 +90,7 @@ class EditUserProfile extends React.Component {
             schema={bridge}
             onSubmit={(data) => this.submit(data)}
             model={this.props.doc}
-           // modelTransform={this.modelTransform}
+            // modelTransform={this.modelTransform}
           >
             <Segment>
               <TextField name="firstName" />
