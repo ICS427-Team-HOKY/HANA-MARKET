@@ -1,7 +1,7 @@
 # ICS 427 - HANA MARKET
 
 ## Overview
-
+HANA MARKET is a web application featuring a local living community where neighbors come together from second-hand deals to neighborhood information. Through this, users can create a warm and friendly life with local residents. Through HANA MARKET, users can easily and conveniently trade in their neighborhood without packaging or delivery charges. 
 
 ## What is complete so far
 - Set up a repository for the team (GitHub)
@@ -24,7 +24,7 @@
 
 #### Worked on in the project so far: 
    - Finished the report
-### Next:
+#### Next:
    - Photo Viewing 
 
 ### Yeji Han
