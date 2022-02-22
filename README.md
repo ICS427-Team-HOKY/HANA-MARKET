@@ -12,11 +12,18 @@
 
 ## List of team members & Assignments
 
-#### Keith Okuna
-- Worked on in the project so far:
-- Next:
+### Keith Okuna
 
-#### Yeji Han
+#### Worked on in the project so far:
 
-- Worked on in the project so far: user dataset, profile page
-- Next: edit profile, item dataset, add & edit items
+#### Next:
+
+### Yeji Han
+
+#### Worked on in the project so far: 
+   - user dataset
+   - profile page
+#### Next: 
+   - edit profile
+   - item dataset
+   - add & edit items
