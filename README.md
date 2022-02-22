@@ -5,9 +5,15 @@
 
 ## What is complete so far
 - Set up a repository for the team (GitHub)
+- User's dataset
+- User's Profile Page
 
 
 ## What is pending
+- Edit Profile Page
+- Items' dataset
+- Add & Edit Item Page
+- List All Items Page
 
 
 ## List of team members & Assignments
