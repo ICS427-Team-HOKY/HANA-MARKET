@@ -17,7 +17,6 @@ import Signup from '../pages/Signup';
 import Signout from '../pages/Signout';
 import CreateUserProfile from '../pages/CreateUserProfile';
 import ViewProfile from '../pages/ViewProfile';
-import EditUserProfile from '../pages/EditUserProfile';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
