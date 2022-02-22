@@ -24,7 +24,7 @@ HANA MARKET is a web application featuring a local living community where neighb
 
 #### Worked on in the project so far: 
    - Finished the report
-### Next:
+#### Next:
    - Photo Viewing 
 
 ### Yeji Han
