@@ -11,7 +11,7 @@ export class UserInfo extends React.Component {
         <Table.Cell>{this.props.user.firstName}</Table.Cell>
         <Table.Cell>{this.props.user.lastName}</Table.Cell>
         <Table.Cell>{this.props.user.gender}</Table.Cell>
-        <Table.Cell>{this.props.user.birthDate.toDateString()}</Table.Cell>
+        <Table.Cell>{String(this.props.user.birthDate.toDateString())}</Table.Cell>
         <Table.Cell>{this.props.user.address}</Table.Cell>
         <Table.Cell>{this.props.user.phone}</Table.Cell>
         <Table.Cell>
@@ -24,15 +24,7 @@ export class UserInfo extends React.Component {
 
 // Require a document to be passed to this component.
 UserInfo.propTypes = {
-  user: PropTypes.shape({
-    firstName: PropTypes.string,
-    lastName: PropTypes.string,
-    gender: PropTypes.string,
-    birthDate: PropTypes.string,
-    address: PropTypes.string,
-    phone: PropTypes.number,
-    _id: PropTypes.string,
-  }).isRequired,
+  user: PropTypes.object.isRequired,
 };
 
 // Wrap this component in withRouter since we use the <Link> React Router element.

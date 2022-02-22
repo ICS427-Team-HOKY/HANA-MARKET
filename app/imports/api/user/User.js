@@ -22,11 +22,13 @@ class UsersCollection {
       },
       birthDate: {
         type: Date,
-        optional: true,
       },
       address: String,
       phone: Number,
-      owner: String,
+      owner: {
+        type: String,
+        optional: true,
+      },
     }, { tracker: Tracker });
     // Attach the schema to the collection, so all attempts to insert a document are checked against schema.
     this.collection.attachSchema(this.schema);
