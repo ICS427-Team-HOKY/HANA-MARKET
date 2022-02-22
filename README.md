@@ -18,5 +18,5 @@
 
 #### Yeji Han
 
-- Worked on in the project so far:
-- Next:
+- Worked on in the project so far: user dataset, profile page
+- Next: edit profile, item dataset, add & edit items
