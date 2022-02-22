@@ -16,9 +16,9 @@ class NavBar extends React.Component {
           <Header inverted as='h1'>HANA MARKET</Header>
         </Menu.Item>
         {this.props.currentUser ? (
-          [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Stuff</Menu.Item>,
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/view" key='view'>My Profile</Menu.Item>,
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List Stuff</Menu.Item>]
+          [ <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>All Item</Menu.Item>,
+            <Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Item</Menu.Item>,
+            <Menu.Item as={NavLink} activeClassName="active" exact to="/list2" key='list2'>My Item</Menu.Item>]
         ) : ''}
         {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
           <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
@@ -34,6 +34,7 @@ class NavBar extends React.Component {
           ) : (
             <Dropdown id="navbar-current-user" text={this.props.currentUser} pointing="top right" icon={'user'}>
               <Dropdown.Menu>
+                <Dropdown.Item id="navbar-my-profile" icon="user" text="My Profile" as={NavLink} exact to="/view"/>
                 <Dropdown.Item id="navbar-sign-out" icon="sign out" text="Sign Out" as={NavLink} exact to="/signout"/>
               </Dropdown.Menu>
             </Dropdown>
