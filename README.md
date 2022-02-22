@@ -5,8 +5,10 @@
 
 ## What is complete so far
 - Set up a repository for the team (GitHub)
-- User's dataset
-- User's Profile Page
+- User dataset
+- User Register Page
+- User Profile Page
+- ESLint plugin with IntelliJ IDEA
 
 
 ## What is pending
@@ -20,7 +22,7 @@
 
 ### Keith Okuna
 
-#### Worked on in the project so far:
+#### Worked on in the project so far: Finished the report
 
 #### Next:
 
