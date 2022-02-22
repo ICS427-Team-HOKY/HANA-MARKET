@@ -5,9 +5,23 @@
   ],
 
   "defaultData": [
-    { "name": "Basket", "quantity": 3, "owner": "john@foo.com", "condition": "excellent" },
-    { "name": "Bicycle", "quantity": 2, "owner": "john@foo.com", "condition": "poor" },
-    { "name": "Banana", "quantity": 2, "owner": "admin@foo.com", "condition": "good" },
-    { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
+    {
+      "firstName": "John",
+      "lastName": "Foo",
+      "gender": "Male",
+      "birthDate": "10/27/1999",
+      "address": "University of Hawaii at Manoa",
+      "phone": 123456789,
+      "owner": "john@foo.com"
+    },
+    {
+      "firstName": "Admin",
+      "lastName": "Foo",
+      "gender": "Female",
+      "birthDate": "07/08/1998",
+      "address": "Kapiolani Community College",
+      "phone": 123456789,
+      "owner": "admin@foo.com"
+    }
   ]
 }
