@@ -3,6 +3,7 @@ import { Meteor } from 'meteor/meteor';
 import { Container, Table, Header, Loader } from 'semantic-ui-react';
 import { withTracker } from 'meteor/react-meteor-data';
 import PropTypes from 'prop-types';
+import { Redirect } from 'react-router-dom';
 import { Users } from '../../api/user/User';
 import { UserInfo } from '../components/UserInfo';
 
@@ -11,6 +12,9 @@ class ViewProfile extends React.Component {
 
   // If the subscription(s) have been received, render the page, otherwise show a loading icon.
   render() {
+    if (this.props.ready && this.props.users?.length === 0) {
+      return <Redirect to={{ pathname: '/editUserProfile/new' }}/>;
+    }
     return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 

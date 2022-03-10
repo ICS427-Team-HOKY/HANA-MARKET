@@ -63,12 +63,9 @@ class EditUserProfile extends React.Component {
     this.userUpdate({ id: this.props.documentId, data });
   }
 
+  // If the subscription(s) have been received, render the page, otherwise show a loading icon.
   render() {
-    return this.props.ready ? (
-      this.renderPage()
-    ) : (
-      <Loader active>Getting data</Loader>
-    );
+    return (this.props.ready) ? this.renderPage() : <Loader active>Getting data</Loader>;
   }
 
   // Render the form. Use Uniforms: https://github.com/vazco/uniforms
@@ -98,11 +95,10 @@ class EditUserProfile extends React.Component {
 
               <Form.Group widths="equal">
                 <SelectField
-                  fluid
+                  fluid="true"
                   label="Gender"
                   name="gender"
                   placeholder="Gender"
-                  control={Select}
                 />
               </Form.Group>
               <Form.Group widths="equal">

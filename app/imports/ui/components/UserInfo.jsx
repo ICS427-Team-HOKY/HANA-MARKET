@@ -15,7 +15,7 @@ export class UserInfo extends React.Component {
         <Table.Cell>{this.props.user.address}</Table.Cell>
         <Table.Cell>{this.props.user.phone}</Table.Cell>
         <Table.Cell>
-          <Link to={`/edit/${this.props.user._id}`}>Edit</Link>
+          <Link to={`/editUserProfile/${this.props.user._id}`}>Edit</Link>
         </Table.Cell>
       </Table.Row>
     );
