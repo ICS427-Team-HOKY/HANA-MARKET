@@ -11,6 +11,31 @@
     { "name": "Boogie Board", "quantity": 2, "owner": "admin@foo.com", "condition": "excellent" }
   ],
 
+  "defaultItem": [
+    {
+      "title": "High Bio Hack Shoes",
+      "image": "https://di2ponv0v5otw.cloudfront.net/posts/2021/08/06/610dc0dc60fded8ba2795592/m_610dc17dce1e874d088dae2e.jpg",
+      "category": "Kids",
+      "price": 70,
+      "condition": "Good",
+      "description": "Air Jordan Retro 1 High Bio Hack GS\nSz 7Y / 8.5 Wmns\nGreat Like New Condition\nNo Box",
+      "status": "Sale",
+      "tradeAddress": "1561 Kanunu st",
+      "owner": "john@foo.com"
+    },
+    {
+      "title": "Vintage Motorcycle Jacket",
+      "image": "https://di2ponv0v5otw.cloudfront.net/posts/2020/11/14/5fb0259867bd911f06a56c5f/m_5fb025a4ff83041ec7c5c00d.jpg",
+      "category": "Men",
+      "price": 220,
+      "condition": "Excellent",
+      "description": "My husband's had this jacket over 20 years. He paid over $500 for this jacket. It is a riding jacket meant to be for motorcycle riders. There is no major damage. The leather is still super soft. Only a few slight marks as you can see in the photos. Size medium",
+      "status": "Sold Out",
+      "tradeAddress": "1561 Kanunu st",
+      "owner": "admin@foo.com"
+    }
+  ],
+
   "monti": {
     "appId": "changeme",
     "appSecret": "changeme"

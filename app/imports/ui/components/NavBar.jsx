@@ -16,9 +16,9 @@ class NavBar extends React.Component {
           <Header inverted as='h1'>HANA MARKET</Header>
         </Menu.Item>
         {this.props.currentUser ? (
-          [<Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>All Item</Menu.Item>,
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>Add Item</Menu.Item>,
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/list2" key='list2'>My Item</Menu.Item>]
+          [<Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List Item</Menu.Item>,
+            <Menu.Item as={NavLink} activeClassName="active" exact to="/addItem" key='add'>Add Item</Menu.Item>,
+            <Menu.Item as={NavLink} activeClassName="active" exact to="/myItem" key='myItem'>My Item</Menu.Item>]
         ) : ''}
         {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
           <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
