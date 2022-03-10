@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid, Loader, Header, Segment } from "semantic-ui-react";
-import swal from "sweetalert";
+import { Grid, Loader, Header, Segment } from 'semantic-ui-react';
+import swal from 'sweetalert';
 import {
   AutoForm,
   ErrorsField,
@@ -8,12 +8,12 @@ import {
   SelectField,
   SubmitField,
   TextField,
-} from "uniforms-semantic";
-import { Meteor } from "meteor/meteor";
-import { withTracker } from "meteor/react-meteor-data";
-import PropTypes from "prop-types";
-import { Items } from "../../api/item/Item";
+} from 'uniforms-semantic';
+import { Meteor } from 'meteor/meteor';
+import { withTracker } from 'meteor/react-meteor-data';
+import PropTypes from 'prop-types';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
+import { Items } from '../../api/item/Item';
 
 const bridge = new SimpleSchema2Bridge(Items.schema);
 
@@ -21,10 +21,10 @@ const bridge = new SimpleSchema2Bridge(Items.schema);
 class EditItem extends React.Component {
   /** On successful submit, insert the data. */
   submit(data) {
-    let { title, image, category, price, condition, description, status, tradeAddress, _id } = data;
+    const { title, image, category, price, condition, description, status, tradeAddress, _id } = data;
     Items.collection.update(_id, { $set: { title, image, category, price, condition, description, status, tradeAddress } }, (error) => (error ?
-        swal('Error', error.message, 'error') :
-        swal('Success', 'Item updated successfully', 'success')));
+      swal('Error', error.message, 'error') :
+      swal('Success', 'Item updated successfully', 'success')));
   }
 
   /** If the subscription(s) have been received, render the page, otherwise show a loading icon. */

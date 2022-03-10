@@ -5,7 +5,6 @@ import {
   Loader,
   Header,
   Segment,
-  Select,
   Form,
 } from 'semantic-ui-react';
 import swal from 'sweetalert';

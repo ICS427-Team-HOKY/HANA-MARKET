@@ -17,17 +17,17 @@ class ViewListItems extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container>
-          <div className="align-center-mode">
+      <Container>
+        <div className="align-center-mode">
           <br />
-          <Header as="h1" style={{ color: "rgb(44, 62, 80)" }} textAlign="center">List Item</Header>
+          <Header as="h1" style={{ color: 'rgb(44, 62, 80)' }} textAlign="center">List Item</Header>
           <br />
           <br />
           <Card.Group>
             {this.props.items.map((item) => <ListItem key={item._id} item={item} />)}
           </Card.Group>
-          </div>
-        </Container>
+        </div>
+      </Container>
     );
   }
 }

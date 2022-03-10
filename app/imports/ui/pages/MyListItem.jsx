@@ -17,17 +17,17 @@ class MyListItems extends React.Component {
   /** Render the page once subscriptions have been received. */
   renderPage() {
     return (
-        <Container>
-          <div className="align-center-mode">
+      <Container>
+        <div className="align-center-mode">
           <br />
-          <Header as="h1" style={{ color: "rgb(44, 62, 80)" }} textAlign="center">My List Item</Header>
+          <Header as="h1" style={{ color: 'rgb(44, 62, 80)' }} textAlign="center">My List Item</Header>
           <br />
           <br />
           <Card.Group>
             {this.props.items.map((item) => <UserItem key={item._id} item={item} Items={Items}/>)}
           </Card.Group>
-          </div>
-        </Container>
+        </div>
+      </Container>
     );
   }
 }

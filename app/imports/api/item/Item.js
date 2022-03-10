@@ -19,21 +19,21 @@ class ItemsCollection {
         type: String,
         optional: true,
         allowedValues: [
-            'Digital/Home Appliances',
-            'Furniture/Interior',
-            'Kids',
-            'Living',
-            'Women',
-            'Men',
-            'Accessories',
-            'Beauty',
-            'Shoes',
-            'Sports/Leisure',
-            'Games/Hobbies',
-            'Books/Tickets/Records',
-            'Pet Supplies',
-            'Other',
-            'Buy'
+          'Digital/Home Appliances',
+          'Furniture/Interior',
+          'Kids',
+          'Living',
+          'Women',
+          'Men',
+          'Accessories',
+          'Beauty',
+          'Shoes',
+          'Sports/Leisure',
+          'Games/Hobbies',
+          'Books/Tickets/Records',
+          'Pet Supplies',
+          'Other',
+          'Buy',
         ],
       },
       price: Number,
@@ -65,4 +65,4 @@ class ItemsCollection {
  * The singleton instance of the StuffsCollection.
  * @type {ItemsCollection}
  */
-export const Items = new ItemsCollection ();
+export const Items = new ItemsCollection();
