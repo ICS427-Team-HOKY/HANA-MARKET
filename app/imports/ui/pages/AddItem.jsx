@@ -91,9 +91,9 @@ class AddItem extends React.Component {
                 <SelectField name="category" label="Category"/>
                 <TextField name="price" label="Price"/>
                 <SelectField name="condition" label="Condition"/>
-                <SelectField name="status" label="Status"/>
                 <TextField name="tradeAddress" label="Location"/>
                 <TextField name="description" />
+                <SelectField name="status" label="Status"/>
                 <SubmitField value="Submit" />
                 <ErrorsField />
               </Segment>

@@ -9,21 +9,22 @@ import { Roles } from 'meteor/alanning:roles';
 /** The NavBar appears at the top of every page. Rendered by the App Layout component. */
 class NavBar extends React.Component {
   render() {
-    const menuStyle = { marginBottom: '10px' };
+    const menuStyle = { verticalAlign: 'middle', height: '72px', background: 'rgba(255,255,255, 1)', boxShadow: '0 2px 5px rgba(0,0,0, .15)' };
+    const subMenu = { fontSize: '20px', color: 'rgba(0,0,0, .6)', fontFamily: 'Montserrat', fontWeight: '500' };
     return (
-      <Menu style={menuStyle} attached="top" borderless inverted>
+      <Menu style={menuStyle} attached="top" borderless>
         <Menu.Item as={NavLink} activeClassName="" exact to="/">
-          <Header inverted as='h1'>HANA MARKET</Header>
+          <Header as='h1'><span className="logo">HANA<span className="logo-2">*</span></span></Header>
         </Menu.Item>
         {this.props.currentUser ? (
-          [<Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>List Item</Menu.Item>,
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/addItem" key='add'>Add Item</Menu.Item>,
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/myItem" key='myItem'>My Item</Menu.Item>]
+          [<Menu.Item style={subMenu} as={NavLink} activeClassName="active" exact to="/list" key='list'>List Item</Menu.Item>,
+            <Menu.Item style={subMenu} as={NavLink} activeClassName="active" exact to="/addItem" key='add'>Add Item</Menu.Item>,
+            <Menu.Item style={subMenu} as={NavLink} activeClassName="active" exact to="/myItem" key='myItem'>My Item</Menu.Item>]
         ) : ''}
         {Roles.userIsInRole(Meteor.userId(), 'admin') ? (
-          <Menu.Item as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
+          <Menu.Item style={subMenu} as={NavLink} activeClassName="active" exact to="/admin" key='admin'>Admin</Menu.Item>
         ) : ''}
-        <Menu.Item position="right">
+        <Menu.Item position="right" style={{ fontSize: '20px', color: '#232323' }}>
           {this.props.currentUser === '' ? (
             <Dropdown id="login-dropdown" text="Login" pointing="top right" icon={'user'}>
               <Dropdown.Menu>
