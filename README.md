@@ -27,8 +27,10 @@ HANA MARKET is a web application featuring a local living community where neighb
 
 #### Worked on in the project so far: 
    - Finished the report
+   - End to end testing (TestCafe)
 #### Next:
-   - Photo Viewing 
+   - Photo Upload 
+   - Map view 
 
 ### Yeji Han
 
@@ -69,11 +71,11 @@ HANA MARKET is a web application featuring a local living community where neighb
 ### Keith Okuna
 
 #### New completions: 
-   - 
+   - End to end testing (TestCafe)
 #### Current:
-   -
+   - Integration Testing 
 #### Next:
-   - 
+   - New features 
 
 ### Yeji Han
 
