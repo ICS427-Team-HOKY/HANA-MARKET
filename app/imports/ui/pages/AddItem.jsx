@@ -76,7 +76,7 @@ class AddItem extends React.Component {
   render() {
     let fRef = null;
     return (
-      <section className="add-event-page">
+      <section className="add-event-page" id="add-item-page">
         <Grid container centered>
           <Grid.Column>
             <br />
@@ -86,14 +86,14 @@ class AddItem extends React.Component {
             <br />
             <AutoForm ref={ref => { fRef = ref; }} schema={bridge} onSubmit={data => this.submit(data, fRef)} >
               <Segment>
-                <TextField name="title" label="Title" />
-                <TextField name="image" label="Image URL"/>
-                <SelectField name="category" label="Category"/>
-                <TextField name="price" label="Price"/>
-                <SelectField name="condition" label="Condition"/>
-                <TextField name="tradeAddress" label="Location"/>
-                <TextField name="description" />
-                <SelectField name="status" label="Status"/>
+                <TextField name="title" label="Title" id="item-title"/>
+                <TextField name="image" label="Image URL" id="item-image"/>
+                <SelectField name="category" label="Category" id="item-catagory"/>
+                <TextField name="price" label="Price" id="item-price"/>
+                <SelectField name="condition" label="Condition" id="item-condition"/>
+                <TextField name="tradeAddress" label="Location" id="item-location"/>
+                <TextField name="description" id="item-description"/>
+                <SelectField name="status" label="Status" id="item-status"/>
                 <SubmitField value="Submit" />
                 <ErrorsField />
               </Segment>
