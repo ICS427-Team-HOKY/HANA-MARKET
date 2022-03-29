@@ -52,6 +52,11 @@ HANA MARKET is a web application featuring a local living community where neighb
 - After creating a logo image on the sign-up and sign-in pages, additional work is completed
 
 ## Link
+### GihHub Repository: 
+- <a href="https://github.com/ICS427-Team-HOKY/HANA-MARKET"><i class="large github icon"></i>https://github.com/ICS427-Team-HOKY/HANA-MARKET</a>
+### Completed Issues: 
+- <a href="https://github.com/ICS427-Team-HOKY/HANA-MARKET/projects/2"><i class="large github icon"></i>Milestone 2</a>
+
 
 
 ## Pending
