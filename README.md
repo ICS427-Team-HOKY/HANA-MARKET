@@ -88,3 +88,33 @@ HANA MARKET is a web application featuring a local living community where neighb
    - Landing page work (section3)
 #### Next:
    - Implement the comment function
+
+<br/>
+
+## Assignment 4: 03/28/2022 - 04/11/2022
+## Progress
+
+## Link
+### GihHub Repository: 
+- <a href="https://github.com/ICS427-Team-HOKY/HANA-MARKET"><i class="large github icon"></i>https://github.com/ICS427-Team-HOKY/HANA-MARKET</a>
+### Completed Issues: 
+
+## Pending
+
+## Roles and responsibilities
+
+### Keith Okuna
+
+#### New completions: 
+
+#### Current:
+
+#### Next:
+
+### Yeji Han
+
+#### New completions: 
+   - Added a comment functionality 
+#### Current:
+   - Add admin page & features
+#### Next:
