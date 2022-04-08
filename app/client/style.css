@@ -6,14 +6,10 @@ ul, li {list-style:none;}
   color: red;
 }
 
-.listItem a {
-  color: #232323;
-  text-decoration: none;
-}
-
-.listItem a:hover {
-  color: #232323;
-  text-decoration: none !important;
+.listItem {
+  max-height: 50rem;
+  overflow-y: auto;
+  margin-right: 50px;
 }
 
 .logo {
@@ -322,4 +318,8 @@ ul, li {list-style:none;}
   0% {color:#fff;opacity:0;}
   40% {color:#fff;opacity:0;}
   100% {color:#fff;opacity:1;}
+}
+.comment-feed-listitem{
+  max-height: 10rem;
+  overflow-y: auto;
 }
