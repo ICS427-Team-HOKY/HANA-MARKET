@@ -7,7 +7,6 @@ import { HashRouter as Router, Route, Switch, Redirect } from 'react-router-dom'
 import NavBar from '../components/NavBar';
 import Footer from '../components/Footer';
 import Landing from '../pages/Landing';
-import ListStuffAdmin from '../pages/ListStuffAdmin';
 import NotFound from '../pages/NotFound';
 import Signin from '../pages/Signin';
 import Signup from '../pages/Signup';
@@ -19,6 +18,7 @@ import ViewListItem from '../pages/ViewListItem';
 import MyListItem from '../pages/MyListItem';
 import EditItem from '../pages/EditItem';
 import AddItem from '../pages/AddItem';
+import ViewAdmin from '../pages/ViewAdmin';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -39,7 +39,7 @@ class App extends React.Component {
             <ProtectedRoute path="/addItem" component={AddItem}/>
             <ProtectedRoute path="/editUserProfile/:_id" component={EditUserProfile}/>
             <ProtectedRoute path="/editItem/:_id" component={EditItem}/>
-            <AdminProtectedRoute path="/admin" component={ListStuffAdmin}/>
+            <AdminProtectedRoute path="/admin" component={ViewAdmin}/>
             <Route component={NotFound}/>
           </Switch>
           <Footer/>

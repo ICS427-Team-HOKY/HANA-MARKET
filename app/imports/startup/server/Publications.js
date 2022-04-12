@@ -4,6 +4,7 @@ import { Stuffs } from '../../api/stuff/Stuff';
 import { Users } from '../../api/user/User';
 import { Items } from '../../api/item/Item';
 import { Comments } from '../../api/comment/Comment';
+import { UserList } from '../../api/userList/UserList';
 
 // User-level publication.
 // If logged in, then publish documents owned by this user. Otherwise publish nothing.
@@ -75,6 +76,13 @@ Meteor.publish(Comments.allPublicationName, function () {
 Meteor.publish(Comments.adminPublicationName, function () {
   if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
     return Comments.collection.find();
+  }
+  return this.ready();
+});
+
+Meteor.publish('UserList', function () {
+  if (this.userId && Roles.userIsInRole(this.userId, 'admin')) {
+    return UserList.find();
   }
   return this.ready();
 });
