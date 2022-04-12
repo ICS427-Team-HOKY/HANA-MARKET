@@ -28,7 +28,9 @@ HANA MARKET is a web application featuring a local living community where neighb
 #### Worked on in the project so far: 
    - Finished the report
    - End to end testing (TestCafe)
+   - Fuzz testing 
 #### Next:
+   - Fix API vulnerabilities found during fuzz testing 
    - Photo Upload 
    - Map view 
 
@@ -95,6 +97,7 @@ HANA MARKET is a web application featuring a local living community where neighb
 ## Progress
 - Admin page: Administrators can view all registered items and a list of all registered members.
 - Comment function: All users can write a comment on the registered item (max height is set to limit the length of the card when the number of characters in the comment is long or there are many comments)
+- Major vulnerabilities discovered in the API which allow anyone to insert, modify, and delete data on the server. 
 
 
 ## Link
@@ -113,8 +116,10 @@ HANA MARKET is a web application featuring a local living community where neighb
 ### Keith Okuna
 
 #### New completions: 
+- Fuzz testing 
 
 #### Current:
+- Fixing fuzz testing vulnerabilities 
 
 #### Next:
 
