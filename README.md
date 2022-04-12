@@ -93,13 +93,20 @@ HANA MARKET is a web application featuring a local living community where neighb
 
 ## Assignment 4: 03/28/2022 - 04/11/2022
 ## Progress
+- Admin page: Administrators can view all registered items and a list of all registered members.
+- Comment function: All users can write a comment on the registered item (max height is set to limit the length of the card when the number of characters in the comment is long or there are many comments)
+
 
 ## Link
 ### GihHub Repository: 
 - <a href="https://github.com/ICS427-Team-HOKY/HANA-MARKET"><i class="large github icon"></i>https://github.com/ICS427-Team-HOKY/HANA-MARKET</a>
-### Completed Issues: 
+### Completed Issues:
+- <a href="https://github.com/ICS427-Team-HOKY/HANA-MARKET/projects/3"><i class="large github icon"></i>Milestone 3</a>
 
 ## Pending
+- Add functionality to edit and delete items in the admin page
+- Add community page
+- Design/edit landing section3 & footer
 
 ## Roles and responsibilities
 
@@ -115,6 +122,9 @@ HANA MARKET is a web application featuring a local living community where neighb
 
 #### New completions: 
    - Added a comment functionality 
+   - Added admin page: view all items & user list
 #### Current:
-   - Add admin page & features
+   - Edit footer
 #### Next:
+   - Add Community page: post, edit, delet functions
+   - Complete Landing page
