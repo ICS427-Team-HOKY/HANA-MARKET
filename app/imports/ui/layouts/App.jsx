@@ -19,6 +19,8 @@ import MyListItem from '../pages/MyListItem';
 import EditItem from '../pages/EditItem';
 import AddItem from '../pages/AddItem';
 import ViewAdmin from '../pages/ViewAdmin';
+import AddPost from '../pages/AddPost';
+import ViewPost from '../pages/viewPost';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
 class App extends React.Component {
@@ -33,8 +35,10 @@ class App extends React.Component {
             <Route path="/signup" component={Signup}/>
             <Route path="/signout" component={Signout}/>
             <ProtectedRoute path="/list" component={ViewListItem}/>
+            <ProtectedRoute path="/viewPost" component={ViewPost}/>
             <ProtectedRoute path="/myItem" component={MyListItem}/>
             <ProtectedRoute path="/view" component={ViewProfile}/>
+            <ProtectedRoute path="/addPost" component={AddPost}/>
             <ProtectedRoute path="/addProfile" component={CreateUserProfile}/>
             <ProtectedRoute path="/addItem" component={AddItem}/>
             <ProtectedRoute path="/editUserProfile/:_id" component={EditUserProfile}/>

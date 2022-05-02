@@ -139,7 +139,7 @@ class Landing extends React.Component {
                                 <h4>Communicate with the locals</h4>
                                 <p>In the HANA market, you can meet each other through the community as well as second-hand transactions.
                                   You can share various life information.</p>
-                                <span className="icon-style"><Link to="/addItem">GO TO COMMUNITY<Icon className="icon" name="arrow right"/></Link></span>
+                                <span className="icon-style"><Link to="/viewPost">GO TO COMMUNITY<Icon className="icon" name="arrow right"/></Link></span>
                               </div>
                             </div>
                           </div>
