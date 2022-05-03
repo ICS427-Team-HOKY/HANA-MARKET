@@ -133,3 +133,85 @@ HANA MARKET is a web application featuring a local living community where neighb
 #### Next:
    - Add Community page: post, edit, delet functions
    - Complete Landing page
+
+<br/>
+
+## Assignment 5: 04/11/2022 - 05/02/2022
+- [The repository](https://github.com/ICS427-Team-HOKY/HANA-MARKET)
+- [The final project documentation file]()
+- [The release version of our program]()
+- [Our wiki page](https://github.com/ICS427-Team-HOKY/HANA-MARKET/wiki)
+
+## Progress
+
+## Roles and responsibilities
+
+### Keith Okuna
+
+#### New completions:
+   - Finish the final report
+   - Fixing the security holes
+
+### Yeji Han
+
+#### New completions:
+   - Create Wiki page
+   - Complete Community page
+   - Add the functionalities on Community page(add post and comments)
+   - Edit My Profile page
+
+## Installation
+
+First, [install Meteor](https://www.meteor.com/install).
+
+Second, download [HANA-MARKET](https://github.com/ICS427-Team-HOKY/HANA-MARKET), and request permission to gain access to HANA-MARKET. 
+
+Third, cd into the app/ directory and install required libraries: meteor:
+
+```
+$ meteor npm install
+```
+
+## Running the system
+
+After installation, you can run the application by typing:
+
+```
+$ meteor npm run start
+```
+The first time running the application will add default users: 
+```
+$ meteor npm run start
+
+> meteor-application-template-react@ start /Users/hanyeji/Desktop/github/hany7/HANA-MARKET/app
+> meteor --no-release-check --exclude-archs web.browser.legacy,web.cordova --settings ../config/settings.development.json
+
+=> Started proxy.                             
+=> Started MongoDB.                           
+I20220502-18:24:04.922(9)? Creating the default user(s)
+I20220502-18:24:05.010(9)?   Creating user admin@foo.com.
+I20220502-18:24:05.162(9)?   Creating user john@foo.com.
+I20220502-18:24:05.246(9)? Creating default data.
+I20220502-18:24:05.246(9)?   Adding: John (john@foo.com)
+I20220502-18:24:05.324(9)?   Adding: Admin (admin@foo.com)
+I20220502-18:24:05.329(9)? Creating default item.
+I20220502-18:24:05.333(9)?   Adding: High Bio Hack Shoes (john@foo.com)
+I20220502-18:24:05.463(9)?   Adding: Vintage Motorcycle Jacket (admin@foo.com)
+I20220502-18:24:05.669(9)? Monti APM: completed instrumenting the app
+=> Started your app.
+
+=> App running at: http://localhost:3000/
+```
+
+### Viewing the running app locally
+If everything goes well, the template application appears at http://localhost:3000. 
+
+### ES Lint
+We can run ESLint to verify that our code complies with coding standards.
+```
+meteor npm run lint
+```
+
+
+## Closing thoughts on the outcome of our program 
+Since all the team members have already been formed, our team, unlike other teams, carried out the project with two people. Usually 3-4 people do it, but our team has to do it with two people, so one person got the overall code and framework and the other wrote the report. From this lesson, we learned that software development as a whole should focus more on the security aspect of the application, although the functionality and appearance of the page are important. During the creation of this project, our team tried and tested a number of things and discovered that it needed improvement. Also, one of the team members discovered several vulnerabilities in the code. The server allows any API request to initiate data insertion/deletion without verifying the authenticated user.
