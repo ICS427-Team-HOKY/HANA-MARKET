@@ -29,8 +29,8 @@ HANA MARKET is a web application featuring a local living community where neighb
    - Finished the report
    - End to end testing (TestCafe)
    - Fuzz testing 
-#### Next:
    - Fix API vulnerabilities found during fuzz testing 
+#### Next:
    - Photo Upload 
    - Map view 
 
