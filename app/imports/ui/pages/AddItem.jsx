@@ -11,7 +11,7 @@ import swal from 'sweetalert';
 import { Meteor } from 'meteor/meteor';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import SimpleSchema from 'simpl-schema';
-import { Items } from '../../api/item/Item';
+import { Items, itemsDefineMethod } from '../../api/item/Item';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
@@ -61,7 +61,7 @@ class AddItem extends React.Component {
     const { title, image, category, price, condition, description, status, tradeAddress } = data;
     const owner = Meteor.user().username;
 
-    Items.collection.insert({ title, image, category, price, condition, description, status, tradeAddress, owner },
+    itemsDefineMethod.call({ title, image, category, price, condition, description, status, tradeAddress, owner },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -104,5 +104,6 @@ class AddItem extends React.Component {
     );
   }
 }
+
 
 export default AddItem;
