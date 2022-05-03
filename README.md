@@ -143,6 +143,8 @@ HANA MARKET is a web application featuring a local living community where neighb
 - [Our wiki page](https://github.com/ICS427-Team-HOKY/HANA-MARKET/wiki)
 
 ## Progress
+- Completion of community page (add a post, implement a comment function on the added post)
+- My Profile page UI design change
 
 ## Roles and responsibilities
 
