@@ -139,7 +139,7 @@ HANA MARKET is a web application featuring a local living community where neighb
 ## Assignment 5: 04/11/2022 - 05/02/2022
 - [The repository](https://github.com/ICS427-Team-HOKY/HANA-MARKET)
 - [The final project documentation file](https://docs.google.com/document/d/1S0uMoEAV97O5vCGXlsUV2zGb9_HQrD-gGPZM4XUtbtw/edit#heading=h.8iyjcscz9rew)
-- [The release version of our program]()
+- [The release version of our program](https://github.com/ICS427-Team-HOKY/HANA-MARKET/releases/tag/v1.0.0)
 - [Our wiki page](https://github.com/ICS427-Team-HOKY/HANA-MARKET/wiki)
 
 ## Progress
